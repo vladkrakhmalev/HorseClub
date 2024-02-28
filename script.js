@@ -21,3 +21,15 @@ if (window.innerWidth < 600) {
     auto: false
   })
 }
+
+const buttons = document.querySelectorAll('.open-popup')
+buttons.forEach(button => {
+  button.addEventListener('click', e => {
+    const link = e.target.getAttribute('link')
+    const popup = document.getElementById(link)
+    popup.classList.add('popup_visible')
+  })
+})
+
+const popup = document.getElementById('popup')
+popup.addEventListener('click', () => popup.classList.remove('popup_visible'))

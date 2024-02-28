@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="_hidden">
 
   <section class="mainscreen">
     <div class="container">
@@ -73,7 +73,7 @@
             <td class="table__td"><span class="_old">100 руб.</span> 21 руб. 16 коп.</td>
           </tr>
         </table>
-        <a href="#" class="link">По всем вопросам обращаться в администрацию к К. Михельсону</a>
+        <a link="popup" class="link open-popup">По всем вопросам обращаться в администрацию к К. Михельсону</a>
       </div>
     </div>
   </section>
@@ -83,7 +83,7 @@
       <h2 class="stages__title">
         <span class="stages__title-line">Этапы преображения </span>
         <span class="stages__title-line-2">Васюков</span>
-        <a class="stages__link link" href="#">Будущие источники обогащения васюкинцев</a>
+        <a class="stages__link link open-popup" link="popup">Будущие источники обогащения васюкинцев</a>
       </h2>
 
       <img src="img/plane.png" alt="" class="stages__img">
@@ -129,37 +129,37 @@
             <img src="img/participant.png" alt="" class="participant__slide-img">
             <p class="participant__slide-name">Хозе-Рауль Капабланка</p>
             <p class="participant__slide-info">Чемпион мира по шахматам</p>
-            <button class="button button_small">Подробнее</button>
+            <button link="popup" class="button button_small open-popup">Подробнее</button>
           </div>
           <div class="participant__slide slider__slide">
             <img src="img/participant.png" alt="" class="participant__slide-img">
             <p class="participant__slide-name">Эммануил Ласкер</p>
             <p class="participant__slide-info">Чемпион мира по шахматам</p>
-            <button class="button button_small">Подробнее</button>
+            <button link="popup" class="button button_small open-popup">Подробнее</button>
           </div>
           <div class="participant__slide slider__slide">
             <img src="img/participant.png" alt="" class="participant__slide-img">
             <p class="participant__slide-name">Александр Алехин</p>
             <p class="participant__slide-info">Чемпион мира по шахматам</p>
-            <button class="button button_small">Подробнее</button>
+            <button link="popup" class="button button_small open-popup">Подробнее</button>
           </div>
           <div class="participant__slide slider__slide">
             <img src="img/participant.png" alt="" class="participant__slide-img">
             <p class="participant__slide-name">Арон Нимцович</p>
             <p class="participant__slide-info">Чемпион мира по шахматам</p>
-            <button class="button button_small">Подробнее</button>
+            <button link="popup" class="button button_small open-popup">Подробнее</button>
           </div>
           <div class="participant__slide slider__slide">
             <img src="img/participant.png" alt="" class="participant__slide-img">
             <p class="participant__slide-name">Рихард Рети</p>
             <p class="participant__slide-info">Чемпион мира по шахматам</p>
-            <button class="button button_small">Подробнее</button>
+            <button link="popup" class="button button_small open-popup">Подробнее</button>
           </div>
           <div class="participant__slide slider__slide">
             <img src="img/participant.png" alt="" class="participant__slide-img">
             <p class="participant__slide-name">Остап Бендер</p>
             <p class="participant__slide-info">Чемпион мира по шахматам</p>
-            <button class="button button_small">Подробнее</button>
+            <button link="popup" class="button button_small open-popup">Подробнее</button>
           </div>
         </div>
       </div>
@@ -179,6 +179,12 @@
       <p class="footer__text">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
     </div>
   </footer>
+
+  <div class="popup" id="popup">
+    <div class="popup__container">
+      <p>Поведение этого элемента не предусмотренно по ТЗ, поэтому сделал Popup на всякий случай.</p>
+    </div>
+  </div>
 
   <script src="slider.js"></script>
   <script src="smoothLinks.js"></script>

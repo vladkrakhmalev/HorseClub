@@ -40,6 +40,7 @@ b {
   font-size: 20px;
   color: #3057A2;
   text-decoration: none;
+  cursor: pointer;
 }
 
 section {
@@ -495,8 +496,39 @@ section._animated {
   background-color: #E9DED4;
   padding: 40px 70px;
 }
+
 .footer__text {
   font-size: 16px;
+}
+
+.popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000099;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  transition: .2s;
+  opacity: 0;
+  z-index: -1;
+}
+
+.popup_visible {
+  opacity: 1;
+  z-index: 10;
+}
+
+.popup__container {
+  position: fixed;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  width: calc(100% - 40px);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 
